@@ -1,12 +1,43 @@
-*{
-
+body{
+    background-color: black;
+}
+main{
+    background-color: black;
 }
  nav{
     position: fixed;
 }
 nav ul li{
-    display: inline;
+    display: inline-block;
     align-items: center;
     text-decoration: none;
     list-style: none;
 }
+nav ul li span{
+    color: white;
+}
+nav ul li span:hover{
+    transition: .5s;
+    color: rgb(204, 51, 51);
+    transform: scale(1.5);
+}
+
+#landing{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+}
+
+p{
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+    color: white;
+}
+
+#moistgag_pic{
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    margin: 4rem;
+}
+
